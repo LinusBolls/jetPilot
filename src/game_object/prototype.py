@@ -52,8 +52,5 @@ class GameObject(pygame.sprite.Sprite):
     def render(self):
         render_around_center(self.screen, self.img, self.rect, self.get_angle())
 
-    def collide(self, game_obj):
-        pass
-
     def remove(self, game):
         game.objects.remove(self)

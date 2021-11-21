@@ -24,6 +24,7 @@ def get_magnitude(vector):
 
 def normalize(vector, target_magnitude=1):
     magnitude = max(get_magnitude(vector), 0.1)
+    target_magnitude = max(target_magnitude, 0.1)
     return (vector[0] / (magnitude / target_magnitude), vector[1] / (magnitude / target_magnitude))
 
 def render_around_center(screen, img, rect, angle):
